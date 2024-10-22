@@ -1,0 +1,318 @@
+ /* Common styles */
+ .top-bar {
+    padding: 8px 5%;
+    transition: all 0.3s ease;
+}
+
+.top-bar a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.header {
+    padding: 15px 5%;
+    border-bottom: 1px solid;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navbar {
+    padding: 0;
+    transition: all 0.3s ease;
+    background-color: #070a2c;
+}
+
+.navbar-nav .nav-link {
+    padding: 15px 20px !important;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+}
+.search-bar .form-control {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.search-bar .form-control::placeholder {
+    color: #aaa;
+}
+
+.search-bar .form-control:focus {
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.search-bar .input-group-text {
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar .fas.fa-search {
+    color: #aaa;
+}
+mark {
+    background-color: rgb(220, 245, 0);
+    color: black;
+}
+
+
+
+/* Light theme (default) */
+body.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.light-theme .top-bar {
+    background: #002147;
+    color: white;
+}
+
+body.light-theme .top-bar a {
+    color: white;
+}
+
+body.light-theme .header {
+    background: white;
+    border-bottom-color: #eee;
+}
+
+body.light-theme .navbar {
+    background: #003366;
+}
+
+body.light-theme .navbar-nav .nav-link {
+    color: white !important;
+}
+
+body.light-theme .navbar-nav .nav-link:hover,
+body.light-theme .dropdown-item:hover {
+    background: #004488;
+}
+
+body.light-theme .dropdown-menu {
+    background: #003366;
+}
+
+body.light-theme .dropdown-item {
+    color: white;
+}
+
+body.light-theme .search-bar {
+    background: #f5f5f5;
+}
+
+body.light-theme .search-bar input {
+    color: #333;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .top-bar {
+    background: #001a33;
+    color: white;
+}
+
+body.dark-theme .top-bar a {
+    color: white;
+}
+
+body.dark-theme .header {
+    background: #222;
+    border-bottom-color: #444;
+}
+
+body.dark-theme .navbar {
+    background: #002347;
+}
+
+body.dark-theme .navbar-nav .nav-link {
+    color: white !important;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover,
+body.dark-theme .dropdown-item:hover {
+    background: #003366;
+}
+
+body.dark-theme .dropdown-menu {
+    background: #002347;
+}
+
+body.dark-theme .dropdown-item {
+    color: white;
+}
+
+body.dark-theme .search-bar {
+    background: #444;
+}
+
+body.dark-theme .search-bar input {
+    color: #fff;
+}
+
+body.dark-theme .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.font-size-dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.font-size-controls {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    min-width: 200px;
+    margin-top: 5px;
+}
+
+/* Light theme specific styles */
+body.light-theme .font-size-controls {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+body.light-theme .font-size-controls button {
+    color: #333;
+}
+
+body.light-theme .font-size-controls button:hover {
+    background: #f0f0f0;
+}
+
+/* Dark theme specific styles */
+body.dark-theme .font-size-controls {
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-theme .font-size-controls button {
+    color: #fff;
+}
+
+body.dark-theme .font-size-controls button:hover {
+    background: #444;
+}
+
+/* Common button styles */
+.font-size-controls button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 15px;
+    margin: 2px 0;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 4px;
+}
+
+.font-size-controls button i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Show dropdown on hover */
+.font-size-dropdown:hover .font-size-controls {
+    display: block;
+}
+
+/* Active state for buttons */
+.font-size-controls button.active {
+    background: #0056b3;
+    color: white;
+}
+
+body.dark-theme .font-size-controls button.active {
+    background: #0056b3;
+}
+
+/* Font size classes */
+body.font-smaller {
+    font-size: 14px;
+}
+
+body.font-normal {
+    font-size: 16px;
+}
+
+body.font-larger {
+    font-size: 18px;
+}
+
+body.font-largest {
+    font-size: 20px;
+}
+
+/* Transition for smooth font size changes */
+body {
+    transition: font-size 0.3s ease;
+}
+
+/* Preserve relative sizes */
+h1, h2, h3, h4, h5, h6 {
+    font-size: revert;
+}
+
+/* language selection  */
+.language-dropdown {
+    position: relative;  
+    display: inline-block;
+}
+
+.language-controls {
+    display: none;
+    position: absolute;
+    background-color: #474747;
+    color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.language-dropdown:hover .language-controls {
+    display: block;
+}
+
+.language-controls button {
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.language-controls button:hover {
+    background-color: #383838;
+}

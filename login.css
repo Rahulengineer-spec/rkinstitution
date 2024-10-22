@@ -1,0 +1,20 @@
+body.dark-theme .navbar {
+    background: #002347;
+}
+
+body.dark-theme .navbar-nav .nav-link {
+    color: white !important;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover,
+body.dark-theme .dropdown-item:hover {
+    background: #003366;
+}
+
+body.dark-theme .dropdown-menu {
+    background: #002347;
+}
+
+body.dark-theme .dropdown-item {
+    color: white;
+}
