@@ -18,3 +18,9 @@ body.dark-theme .dropdown-menu {
 body.dark-theme .dropdown-item {
     color: white;
 }
+/*now css for student login/signup*/
+body.dark-theme .student-login {
+    background: #002347;
+    color: white;
+}
+
