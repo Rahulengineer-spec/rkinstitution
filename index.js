@@ -1,4 +1,5 @@
   // Theme switcher functionality
+ 
   function toggleTheme() {
     const body = document.body;
     const isDark = body.classList.contains('dark-theme');
@@ -146,5 +147,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
